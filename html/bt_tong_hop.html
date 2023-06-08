@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bt_tong_hop</title>
+  <link rel="stylesheet" href="/BT_quanLyHocSinh/css/style_tong_hop.css">
+</head>
+
+<body>
+  <section class="container">
+    <h2>Rikkei Academy</h2>
+    <div class="content">
+      <div class="content-left">
+        <h3>Thông tin học viên</h3>
+        <form action="">
+          <table cellspacing="10px">
+            <tr>
+              <td><label for="student_id">Mã sinh viên</label></td>
+              <td>
+                <input type="text" name="student_id" id="student_id" placeholder="vui lòng nhập mã sinh viên">
+              </td>
+            </tr>
+            <tr>
+              <td><label for="fullname">Họ và tên</label></td>
+              <td>
+                <input type="text" name="fullname" id="fullname" placeholder="vui lòng nhập tên">
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input type="text" name="email" id="email" placeholder="vui lòng nhập email"></td>
+            </tr>
+            <tr>
+              <td><label for="phone">Số điện thoại</label></td>
+              <td><input type="text" name="phone" id="phone" placeholder="vui lòng nhập số điện thoại"></td>
+            </tr>
+            <tr>
+              <td><label for="hometown">Quê quán</label></td>
+              <td><input type="text" name="hometown" id="hometown" placeholder="vui lòng nhập địa chỉ quê quán"></td>
+            </tr>
+            <tr>
+              <td><label for="">Giới tính</label></td>
+              <td>
+                <label for="male"><input type="radio" class="sex" name="gender" id="male" checked value="Nam"> Nam
+                </label>
+                <label for="female"><input type="radio" class="sex" name="gender" id="female" value="Nữ"> Nữ</label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button type="button" class="btn">Lưu lại</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+
+      <div class="content-right">
+        <h3>Dánh sách học viên</h3>
+        <div class="search">
+          <label for="search_student">Tìm kiếm học viên : <input type="text" name="student_info"
+              id="student_info"><button type="button" class="search_btn">search</button></label>
+        </div>
+        <div class="student_list">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Mã sinh viên</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Gender</th>
+                <th>Hành động</th>
+                <th><button class="sort" type="button">Sắp xếp (alpha b)</button></th>
+              </tr>
+            </thead>
+            <tbody class="student_list_item">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script src="/BT_quanLyHocSinh/js/bt_tong_hop1.js"></script>
+</body>
+
+</html>
